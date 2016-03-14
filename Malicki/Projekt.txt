@@ -1,4 +1,24 @@
-﻿projekt urządzenia diagnostycznego zdolnego do komunikacji
-z pojazdami:
--Mazda 626 GE (1993)
--Mazda 626 GF (1997)
+﻿Projekt urządzenia do odczytywania diagnostycznych kodów błyskowych.
+
+
+Grupa projektowa: 
+			Mateusz Malicki 205621
+
+Cel projektu:
+
+Wykonanie mobilnego urządzenia do komunikacji z systemami diagnostycznymi nieposiadającymi protokołów transmisyjnych (CAN, SAE J1850, ISO-9141).
+
+
+Założenia projektowe:
+
+- do zastosowania w pojazdach przed wprowadzeniem OBD-II;
+- urządznie ma odczytywać dwucyfrowe kody błędów systemów pojazdów (ECU, ABS AT);
+- odczytane wartości będą wyświetlane na wyświetlaczu LCD;
+- urządzenie nie będzie podawać typu usterki, z powodu rozbieżności znaczeń kodów pomiędzy markami (zwłaszcza pomiędzy Ford i BMW);
+- zasilanie z pojazdu;
+- wykonanie projektowanego urządzenia;
+- wykonanie układu umożliwiającego testowanie projektowanego układu;
+
+Główne zadanie: 
+
+	Wykonanie urządzenia nadającego się do pracy w warsztatach mechanicznych;
