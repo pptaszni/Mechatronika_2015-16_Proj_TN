@@ -5,3 +5,19 @@ Grupa projektowa: Dariusz Han, Krzysztof Mączka, Przemysław Motała
 Celem projektu jest zaprojektowanie sterownika do automatycznej obsługi świateł. Projekt zakłada automatyczne zapalanie świateł do jazdy dziennej po odpaleniu silnika samochodu, a następnie załączanie bądź wyłączanie świateł mijania w zależności od warunków atmosferycznych. Dodatkowo zakładamy instalację funkcji inteligentnych świateł drogowych, a także rozbudowanie projektu o nowe możliwości.
 
 Prosimy o wyrażenie opinii odnośnie wybranego przez nas tematu projektu oraz ewentualne sugestie co do sposobu jego realizacji.
+
+=============== Komentarz: =======================
+
+Wyglada OK. Trzeba jeszcze odpowiednio rozpisać to na zadania, zeby kazdy mial co robic. Tak bardzo wstepnie proponuje realizowac nastepujace kroki (pozniej oczywiscie mozecie sobie to rozbudowac):
+ - research odnosnie czujnikow oswietlenia, wilgotnosci itd. (max 1 dzien pracy)
+ - research odnosnie sterowania swiatlami w wybranych modelach samochodow; czasami jest jakies pokretlo, czasami jest guzik, czasami wajcha kolo kierownicy; trzeba wymyslec w jaki sposob to wysterowac (mysle za da sie to zrobic w 2 dni)
+ - projekt zasilania ukladu; mamy 12V z aku, a zapewne bedziemy potrzebowac 5V, 3.3V, 2.7V na logike i czujniki; zobaczcie sobie jak idzie zasilanie w popularnych ukladach (2 dni powinny wystarczyc)
+ - projekt plytki PCB dla ukladu zasilania i/lub czujnikow, chyba ze chcecie zeby to wszystko wisialo na kablach, ale nie polecam; przed przystapieniem do projektowania musicie juz wiedziec, jak konkretnie bedzie szlo zasilanie i z jakich czujnikow/kontrolerow bedziecie korzystac (max 1 dzien)
+ - wykonanie ukladu zasilania, podlaczenie czujnikow i kontrolerow (1 dzien)
+ - zaprogramowanie kontrolerow (moze byc robione rownolegle, zanim powstanie rzeczywisty uklad) (w zasadzie da sie to zrobic w ciagu 1 dnia)
+ - instalacja calosci tego bajzlu w jakims aucie :) (jeden weekend i po problemie)
+
+Pomyslcie nad tym, zaproponujcie jakies realne dedliny z odpowiednim marginesem i mozecie prpobowac to wykonac. Zrobcie to tak, zebyscie do 23.03 juz pracowali.
+
+===================================================
+
