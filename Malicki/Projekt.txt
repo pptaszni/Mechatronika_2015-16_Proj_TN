@@ -22,3 +22,23 @@ Założenia projektowe:
 Główne zadanie: 
 
 	Wykonanie urządzenia nadającego się do pracy w warsztatach mechanicznych;
+
+
+
+=============== Komentarz: =======================
+
+Wygląda OK. Proponuje wstepnie rozpisac to na nastepujace zadania:
+ - zastanow sie w jaki sposob odczytasz blyski; najprosciej wpiac sie kablem pod diode (troche inwazyjne), albo uzyc fotokomorki (nieinwazyjne, ale tez mniej odporne) (zadanie na 1 dzien)
+ - wybor czujnika i wyswietlacza
+ - projekt zasilania; trzeba zbic 12V z aku do poziomow logicznych kontrolera (zwykle 5V)
+ - projekt plytki PCB pod kontroler, wyswietlacz i czujnik (1 dzien)
+ - projekt PCB pod drugi kontroller sterujacy mrugajaca dioda (srodowisko testowe)
+ - zaprogramowanie kontrolerow (weekend + poprawki)
+ - testowanie ukladu
+
+Dodatkowo, jak juz cokolwiek bedzie dzialac, proponuje rozszerzyc funkcjonalnosc o mozliwosc podania typu pojazdu w celu rozroznienia kodow blyskowych (np. jeden guzik do przewijania listy wspieranych aut, drugi guzik do wystartowania systemu).
+
+Pomysl nad tym, i do 23.03 zaproponuj jakies realne deadliny.
+
+===================================================
+
