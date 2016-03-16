@@ -35,3 +35,18 @@ Mikrokontrolery połączone ze sobą siecią CAN.
 Mikrokontroler 1. przesyła informację o przekroczeniu przeciążenia 0,7g do mikrokontrolera 2., ten zaś uruchamia światła awaryjne, z częstotliwością 3 Hz.
 
 Główne zadanie: opanowanie standardu CAN
+
+
+=============== Komentarz: =======================
+
+Pomysł jest OK, wstepna koncepcja tez calkiem niezla. Moje uwagi:
+ - TMS320F2812 to w sumie DSP (raczej do szybkiego przetwarzania A/D <--> D/A audio/video), ale skoro juz go masz i obsluguje CAN to rzeczywiscie warto z niego skorzystac
+ - STM32F407G wyglada wporzo, tylko troche drogo; wiem ze od freescale (teraz nxp.com) mozna dostac procki z zaimplementowanym CAN za free, tylko ze trzeba je sobie potem polutowac (nie zawsze sie uda); moze jak by podejsc na W4 (do C-3 np) i zapytac czy nie maja jakiegos procka gotowego obslugujacego CAN, to by pozyczyli; ewentualnie moge pozyczyc raspberry/banana Pi, tylko ze tam samemu trzeba sobie ten CAN zaimplementowac, a to jest duzo dodatkowej roboty
+ - transcievery powinny sie nadac; trzeba zwrocic uwage tylko, zeby poziomy logiczne na szynach TX/RX zgadzaly sie z tymi na mikroklocku, bo inaczej trzeba bedzie stosowac dodatkowy konwerter
+ - wybierajac akcelerometr zastanow sie, czy dasz rade sam go przylutowac (chyba ze juz jest na plytce) i czy protokol po ktorym on gada jest obslugiwany w twoim kontrolerze
+ - ogolnie powinno sie udac, poczytaj tylko porzadnie o standardzie CAN, zeby faza implementacyjna poszla sprawnie
+
+Takze teraz do 23.03 postaraj sie rozpisac sobie ten projekt na poszczegolne zadania. Lista bedzie podobna do tej, ktora napisalem u chlopakow Han, Maczka, Motala.
+
+===================================================
+
