@@ -1,0 +1,12 @@
+=============== Komentarz: =======================
+
+W zasadzie wyglada to juz calkiem niezle. Z grubsza wiadomo, co nalezy zrobic. Napisze wam taka wstepna liste zadan do wykonania, na 23.03 rozwincie ja troche i dopiszcie sobie jakies sensowne deadliny:
+ - research odnosnie dzialania systemow ABS (max 1 dzien)
+ - zdefiniowanie formatu pliku wejsciowego; wezcie pod uwage mozliwe jednostki (speed, slip, friction coef. etc.), czestotliwosc probkowania itd. (1 dzien)
+ - dobor bibliotek graficznych (w miare proste do C++ sa QT, openGL)
+ - http://www.mathworks.com/help/simulink/examples/modeling-an-anti-lock-braking-system.html?requestedDomain=www.mathworks.com - tutaj macie chyba jeden z najprostszych modeli kola, zrozumcie go i zaimplementujcie w swoim projekcie (1-2 dni)
+ - implementacja i testowanie algorytmu
+ - sposob graficznej prezentacji wyjscia
+
+===================================================
+
