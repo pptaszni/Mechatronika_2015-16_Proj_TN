@@ -42,3 +42,25 @@ Pomysl nad tym, i do 23.03 zaproponuj jakies realne deadliny.
 
 ===================================================
 
+
+
+/**************Komentarz do komentarza:**********************/
+
+Co do zadanych pytań:
+- Wyjscia sygnałowe są wyprowadzone w gnieździe diagnostycznym, w które w wersji prymitywnej wpina się diodę. Więc i tak muszę kożystać z kabli (zasilanie też jest w gnieździe)
+
+- co do odczytów błysków, to myślałem nad pomiarami czasów pomiędzy zboczami sygnału błyskowego, kożystając z komparatora w mikrokontrolerze
+
+- z powodów nieznanych parametrów sygnału (w opisach jest tylko podane wymaganie aby używać diody LED na 12V)dobór czyjnika jest utrudniony. W święta wielkanocne dokonam pomiarów na pojazdach, co umożliwi obór czujnika;
+
+- układ wstępnie wykonany na Atmega328p oraz wyświetlaczu alfanumerycznym LCD 2x16 (posiadam już te komponenty)
+
+- układ testujący myślałem wykonać na przyciskach i timerach NE555, co umożliwi wygenerowanie dowolnej sekwencji kodów błyskowych;
+
+- myślałem o zastosowaniu wyboru marki pojazdu i obsługiwanych układów (silnik ABS lub automatyczna skrzynia), ale obawiam się o niewystarczająca ilość pamięci w Atmedze. 
+  Niemniej jednak napewno zastosuje kilka dodatkowych przycisków w celu umożliwienia tego typu rozszerzenia;
+
+Co do terminów postaram się je podać do 6.04. Wynika to z wspomnianych pomiarów jak i przeprowadzania programowania innego ukladu pomiarowego na drógiej atmedze328p z takim samym wyświetlaczem.
+Będe wtedy miał pogląd na zasoby pamięciawe tego mikroprocesora, co może przesądzić o jego wymianie.
+
+/***********************************************************/
