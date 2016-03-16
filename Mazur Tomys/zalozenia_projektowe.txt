@@ -8,3 +8,24 @@ Założenia:
 - Układ ma pobierać aktualne dane o prędkości pojazdu i położeniu pedału hamulca,
 - Na podstawie zebranych danych regulowany będzie kąt natarcia spojlera,
 - Maksymalna prędkość pojazdu - 300 km/h.
+
+
+
+=============== Komentarz: =======================
+
+Wyglada niezle, ale jest jeszcze duzo do dopowiedzenia :)
+
+Chcecie to zrobic czysto wirtualnie (sam software), czy jednak skorzystacie z jakis elementow elektronicznych, mechanicznych?
+Dane wyjsciowe maja sterowac czyms rzeczywistym, czy wystarczy nam informacja o kacie natarcia?
+Wstepnie proponuje nastepujace zadania (zmodyfikujcie wedlug uznania):
+ - research odnosnie sterowania spojlerem; czy jest to zwykly sygnal napieciowy, czy cos bardziej skomplikowanego? (max 1 dzien)
+ - research odnosnie zestawu danych wejsciowych do algorytmu sterujacego spojlerem (max 1 dzien)
+ - dobor czujnikow (zobaczyc jakie czujniki juz w aucie sa i jak z nich skorzystac) (1-2 dni)
+ - projekt ukladu zasilania, PCB pod kontroler i czujniki (max tydzien na wszystko, trzeba to rozbic na mniejsze zadania) - wersja z elektronika
+ - projekt i zaprogramowanie srodowiska symulujacego pojazd w ruchu (max tydzien, trzeba rpozbic na mniejsze zadania) - wersja bez elektroniki
+ - projekt i wykonanie elementu wyjsciowego (spojler), jakas wirtualna animacja, lub rzeczywisty uklad mechaniczny (max tydzien, ale rowniez do rozbicia na mniejsze zadania)
+
+Pomyslcie nad tym, zmodyfikujcie powyzsza liste wg uznania i wrzuccie odpowiednia rozpiske do 23.03.
+
+===================================================
+
