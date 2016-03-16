@@ -52,15 +52,18 @@ Co do zadanych pytań:
 - co do odczytów błysków, to myślałem nad pomiarami czasów pomiędzy zboczami sygnału błyskowego, kożystając z komparatora w mikrokontrolerze
 
 - z powodów nieznanych parametrów sygnału (w opisach jest tylko podane wymaganie aby używać diody LED na 12V)dobór czyjnika jest utrudniony. W święta wielkanocne dokonam pomiarów na pojazdach, co umożliwi obór czujnika;
+// jasne, teraz rozumiem, to jest coś takiego jak na tym filmiku pewnie: http://www.mazdaspeed.pl/forum/viewtopic.php?f=122&t=145325; w takim razie raczej wystarczy zbic napiecie na odpowiednim pinie z 12V do ok 5V i przekierowac ten sygnal na T0 Atmegi. W Atmedze w Counter0 ustawic clock source na "External clock source on T0 pin. Clock on falling [albo rising] edge.", Timer1 ustawic zeby cos tam sobie stukal (reference clock) i wtedy bez problemu mozna odczytac caly sygnal. Z diody mozna skorzystac ewentualnie do debugowania.
 
 - układ wstępnie wykonany na Atmega328p oraz wyświetlaczu alfanumerycznym LCD 2x16 (posiadam już te komponenty)
 
 - układ testujący myślałem wykonać na przyciskach i timerach NE555, co umożliwi wygenerowanie dowolnej sekwencji kodów błyskowych;
+// OK, przynajmniej nie bedzie zbyt trywialnie
 
 - myślałem o zastosowaniu wyboru marki pojazdu i obsługiwanych układów (silnik ABS lub automatyczna skrzynia), ale obawiam się o niewystarczająca ilość pamięci w Atmedze. 
   Niemniej jednak napewno zastosuje kilka dodatkowych przycisków w celu umożliwienia tego typu rozszerzenia;
 
 Co do terminów postaram się je podać do 6.04. Wynika to z wspomnianych pomiarów jak i przeprowadzania programowania innego ukladu pomiarowego na drógiej atmedze328p z takim samym wyświetlaczem.
 Będe wtedy miał pogląd na zasoby pamięciawe tego mikroprocesora, co może przesądzić o jego wymianie.
+// OK, w takim razie czekam
 
 /***********************************************************/
