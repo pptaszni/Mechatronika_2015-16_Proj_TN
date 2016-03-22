@@ -10,7 +10,6 @@ Założenia:
 - Maksymalna prędkość pojazdu - 300 km/h.
 
 
-
 =============== Komentarz: =======================
 
 Wyglada niezle, ale jest jeszcze duzo do dopowiedzenia :)
@@ -29,3 +28,9 @@ Pomyslcie nad tym, zmodyfikujcie powyzsza liste wg uznania i wrzuccie odpowiedni
 
 ===================================================
 
+Zadania do wykonania:
+- research odnosnie sterowania spojlerem
+- research odnosnie zestawu danych wejsciowych do algorytmu sterujacego spojlerem (max 1 dzien)
+- dobor czujnikow (1-2 dni)
+- projekt ukladu zasilania, PCB pod kontroler i czujniki
+- projekt i wykonanie prototypu elementu wyjsciowego (oraz animacji, jeśli starczy czasu): elektronika i mechanika
