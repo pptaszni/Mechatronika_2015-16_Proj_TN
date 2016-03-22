@@ -1,5 +1,4 @@
 ﻿Temat projektu: Automatyczne sterowanie światłami
-
 Grupa projektowa: Dariusz Han, Krzysztof Mączka, Przemysław Motała
 
 Celem projektu jest zaprojektowanie sterownika do automatycznej obsługi świateł. Projekt zakłada automatyczne zapalanie świateł do jazdy dziennej po odpaleniu silnika samochodu, a następnie załączanie bądź wyłączanie świateł mijania w zależności od warunków atmosferycznych. Dodatkowo zakładamy instalację funkcji inteligentnych świateł drogowych, a także rozbudowanie projektu o nowe możliwości.
@@ -21,3 +20,20 @@ Pomyslcie nad tym, zaproponujcie jakies realne dedliny z odpowiednim marginesem 
 
 ===================================================
 
+
+23.03.16 Plan zadań i wstępny terminarz
+
+1. Wykonanie przeglądu czujników potrzebnych do realizacji projektu (czujniki oświetlenia, wilgotności itp.).    TERMIN: 30.03.16
+2. Zapoznanie się z zasadą sterowania światłami u różnych producentów samochodów.   TERMIN: 06.04.16
+3. Przegląd dostępnych na rynku gotowych rozwiązań (ich zalety/wady).   TERMIN: 06.04.16
+4. Wstępny projekt rozwiązania.   TERMIN: 13.04.16
+5. Dobór elementów: czujniki, mikrokontroler (Arduino Uno Rev3 / STM32F4-Discovery).   TERMIN: 13.04.16
+W dalszych terminach:
+6a. Skompletowanie elementów wymaganych do realizacji projektu.
+6b. Wykonanie układu zasilania, podłączenie elementów.
+6c. Zaprogramowanie mikrokontrolera.
+7. Wstępne testy rozwiązania.
+8. Instalacja układu w samochodzie.
+9. Testy końcowe projektu w praktycznym zastosowaniu.
+
+Zadania 6a, 6b, 6c będą realizowane równolegle. W trakcie rozwoju projektu podamy brakujące terminy do pozostałych zadań. Rozważymy propozycję wykonania własnej płytki PCB (raczej sam projekt) w zależności od ilości dostępnego czasu.
