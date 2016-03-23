@@ -12,3 +12,13 @@ Wykorzystany sprzet:
 
 Otwarci jestesmy na wszelkie sugestie wzgledem powyzszych zalozen. 
 
+=============== Komentarz: =======================
+
+OK, pomysl jest dobry. Musicie tylko troche bardziej szczegolowo rozpisac sobie projekt na mniejsze zadania, zeby sie lepiej przy nim pracowalo.
+
+Proponuje wstepnie wydzielic w aplikacji moduly odpowiedzialne za detekcje bialych linii, oraz okreslenie na ich podstawie pozycji auta. Moga to robic rownolegle dwie osoby, trzecia osoba moze w tym czasie zajmowac sie ustawieniem Raspberry i kamery, dobraniem odpowiedniej ilosci klatek na sekunde, rozdzielczosci obrazu i jego wstepny processing (mozna wyrownac histogram, przeleciec jakims Laplacem). Zapewne jedne rzeczy pojda szybciej, inne wolniej, wiec pozniej najwyzej jakos tam juz sie pomieszacie.
+
+Zacznijcie jak najszybciej prace nad wykrywaniem tych pasow na rzeczywistych zdjeciach, bo moze z tym byc roznie. Narzuccie sobie jakis maly rezim, zeby mniej wiecej co tydzien raportowac zmiany na githubie.
+
+===================================================
+
