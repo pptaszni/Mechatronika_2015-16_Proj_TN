@@ -1,0 +1,1 @@
+Rasberry Pi 3 zosta³o zakupione i dotar³o ju¿ ca³e i zdrowe. Na chwilê obecn¹ zajmiemy siê postawieniem linuxa na malince oraz instalacj¹ OpenCV
