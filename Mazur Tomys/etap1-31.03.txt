@@ -1,0 +1,25 @@
+﻿1. Sterowanie spojlerem:
+- 1 możliwość - zastosowanie jako aktuatora siłownika hydraulicznego, co pozwoliłoby na uzyskanie dużej siły na wyjściu.
+Pomysł odrzucony ze wzgledu na cenę i trudności w praktycznej realizacji prototypu.
+- 2 możliwość - do zmiany nachylenia spojlera wykorzystany zostanie silnik elektryczny (1 lub więcej) z przekładnią ruchu obrotowego
+na postępowy, najprawodopodobniej w postaci gotowego modułu serwomechanizmu sterowanego przez sygnał PWM. 
+Spojler/ hamulec aerodynamiczny zostanie zaprojektowany w taki sposób, aby siła oporu powietrza wspomagała pracę silnika.
+Przed ostateczym wyborem napędu niezbędne będzie oszacowanie sił i wstępne zamodelowanie spojlera.
+
+2.Dane wejściowe do algorytmu sterowania:
+Potrzebna będzie znajomość:
+- prędkości pojazdu - prawdopodobnie będzie odczytywana bezposrednio z czujnika pojazdu lub przez magistralę CAN, 
+- położenia pedału hamulca - wykorzystamy dodatkowy czujnik,
+- aktualnego kąta nachylenia spojlera.
+
+Znajomość aktualnej oraz poprzezdzających prędkości jest konieczna, aby można było określić czy samochód przyspiesza i czy potrzebny
+jest docisk na oś napędową. Alternatywanie do wykorzystania tutaj czujnik przyspieszenia (jednak wartośc prędkości i tak będzie potrzebna). 
+Natomiast jeśli pojazd jedzie ze stałą prędkością lub przyspiesza nieznacznie celem będzie zmniejszenie oporu powietrza.
+Jednocześnie przy niskich prędkościach opór powietrza jest na tyle mały, że użycie hamulca aerodynamicznego
+nie bedzie miało wpływu na prędkość jazdy, więc nie ma potrzeby by się uaktywniał.
+Dzięki znajmości położenia pedału hamulca można określić jak silne i gwałtowne ma być hamowanie aerodynamiczne.
+
+Do przetwarzania i obliczania danych możemy zastosować (mamy dostęp do wszystkich. Musimy tylko zdecydować, który nam najlepiej odpowiada):
+- Arduino Uno,
+- płytka typu STM32 Discovery z Cortex M3 - najprawodpodobniej zdecydujemy się na tą opcję,
+- lub Raspberry Pi 2.
