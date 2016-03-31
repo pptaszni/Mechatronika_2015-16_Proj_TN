@@ -1,0 +1,21 @@
+założenia projektowe - automatyczne owietlenie pojazdu
+Temat Projektu: "automatyczne oświetlenie samochodu podczas jazdy po drogach publicznych"
+
+Sklad grupy: Maksym Leski, Kornel Piatkowski, Tomasz Wloczyk
+
+Zalozenia projektowe:
+- analiza oświetlenia panującego na jezdni podczas jazdy w różnych warunkach (w nocy po oświetlonej oraz nieoświetlonej drodze, w dzień)
+- sterowanie wyjściami RPi na podstawie natężenia światła otaczającego pojazd  
+- testowanie urządzenia podczas jazdy samochodem w różnych warunkach
+- próba zaimplementowania systemu w samochodzie (w dostępie mamy mercedesa W124, w którym podpięcie się do sterownika świateł nie stanowi większego problemu)
+^ przełączanie świateł do jazdy dziennej/drogowych/mijania na podstawie wyników pomiaru natężenia światła
+- testowanie działania systemu zintegrowanego z samochodem
+- rozeznanie, w jaki sposób można mierzyć mgłę panującą na drodzę (jako urozmaicenie, można spróbować wykrywać mgłę oraz na tej podstawie włączać światła przeciwmgielne)
+- ewentualna implementacja układu pomiaru mgły i sterowania światłami przeciwmgielnymi w samochodzie oraz testowanie
+
+Wykorzystany sprzęt
+- mikrokomputer Raspberry Pi3 
+- detektory światła, np. fotorezystory(potrzebne bedzie kilka, aby mierzyć światło w różnych miejscach samochodu dla pewniejszego wyniku)
+- potencjalne czujniki mgły lub inne czujniki, które pośrednio mogą mierzyć mgłę (np poprzez pomiar wigloci oraz opadu deszczu - gdy nie pada deszcz, a wilgotność jest duża, wówczas panuje mgła - chyba :D )
+
+Otwarci jestesmy na wszelkie sugestie wzgledem powyzszych zalozen. 
