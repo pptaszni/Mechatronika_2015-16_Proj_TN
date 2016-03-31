@@ -1,0 +1,21 @@
+za³o¿enia projektowe - automatyczne œwiat³a 
+Temat Projektu: "automatyczne oœwietlenie samochodu podczas jazdy po drogach publicznych"
+
+Sklad grupy: Maksym Leski, Kornel Piatkowski, Tomasz Wloczyk
+
+Zalozenia projektowe:
+- analiza oœwietlenia panuj¹cego na jezdni podczas jazdy w ró¿nych warunkach (w nocy po oœwietlonej oraz nieoœwietlonej drodze, w dzieñ)
+- sterowanie wyjœciami RPi na podstawie natê¿enia œwiat³a otaczaj¹cego pojazd  
+- testowanie urz¹dzenia podczas jazdy samochodem w ró¿nych warunkach
+- próba zaimplementowania systemu w samochodzie (w dostêpie mamy mercedesa W124, w którym podpiêcie siê do sterownika œwiate³ nie stanowi wiêkszego problemu)
+^ prze³¹czanie œwiate³ do jazdy dziennej/drogowych/mijania na podstawie wyników pomiaru natê¿enia œwiat³a
+- testowanie dzia³ania systemu zintegrowanego z samochodem
+- rozeznanie, w jaki sposób mo¿na mierzyæ mg³ê panuj¹c¹ na drodzê (jako urozmaicenie, mo¿na spróbowaæ wykrywaæ mg³ê oraz na tej podstawie w³¹czaæ œwiat³a przeciwmgielne)
+- ewentualna implementacja uk³adu pomiaru mg³y i sterowania œwiat³ami przeciwmgielnymi w samochodzie oraz testowanie
+
+Wykorzystany sprzêt
+- mikrokomputer Raspberry Pi3 
+- detektory œwiat³a, np. fotorezystory(potrzebne bedzie kilka, aby mierzyæ œwiat³o w ró¿nych miejscach samochodu dla pewniejszego wyniku)
+- potencjalne czujniki mg³y lub inne czujniki, które poœrednio mog¹ mierzyæ mg³ê (np poprzez pomiar wigloci oraz opadu deszczu - gdy nie pada deszcz, a wilgotnoœæ jest du¿a, wówczas panuje mg³a - chyba :D )
+
+Otwarci jestesmy na wszelkie sugestie wzgledem powyzszych zalozen. 
