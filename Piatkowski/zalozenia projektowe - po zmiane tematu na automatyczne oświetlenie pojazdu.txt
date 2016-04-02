@@ -1,21 +1,29 @@
-założenia projektowe - automatyczne owietlenie pojazdu
+założenia projektowe 
 Temat Projektu: "automatyczne oświetlenie samochodu podczas jazdy po drogach publicznych"
 
 Sklad grupy: Maksym Leski, Kornel Piatkowski, Tomasz Wloczyk
 
 Zalozenia projektowe:
-- analiza oświetlenia panującego na jezdni podczas jazdy w różnych warunkach (w nocy po oświetlonej oraz nieoświetlonej drodze, w dzień)
-- sterowanie wyjściami RPi na podstawie natężenia światła otaczającego pojazd  
-- testowanie urządzenia podczas jazdy samochodem w różnych warunkach
-- próba zaimplementowania systemu w samochodzie (w dostępie mamy mercedesa W124, w którym podpięcie się do sterownika świateł nie stanowi większego problemu)
-^ przełączanie świateł do jazdy dziennej/drogowych/mijania na podstawie wyników pomiaru natężenia światła
-- testowanie działania systemu zintegrowanego z samochodem
-- rozeznanie, w jaki sposób można mierzyć mgłę panującą na drodzę (jako urozmaicenie, można spróbować wykrywać mgłę oraz na tej podstawie włączać światła przeciwmgielne)
-- ewentualna implementacja układu pomiaru mgły i sterowania światłami przeciwmgielnymi w samochodzie oraz testowanie
+1) analiza oświetlenia panującego na jezdni podczas jazdy w różnych warunkach (w nocy po oświetlonej oraz nieoświetlonej drodze, w dzień)
+1a) nagranie kilku filmików kamera podczas różnych warunków panujcych na drodze
+1b) opracowanie algorytmu analizy obrazów na podstawie nagranych filmików
+1c) ustalenie warunków brzegowych zmieniania swiatel
+
+2) wprowadzenie algorytmu do RPi, podlaczenie kamerki oraz testowanie algorytmu podczas odczytu obrazu w czasie rzeczywistym
+2a) sterowanie wyjściami RPi wczesniej ustalonych warunków brzegowych - efekt poprawnej pracy można zaobserwować poprzez przelaczanie diód
+
+3) próba zaimplementowania systemu w samochodzie (w dostępie mamy mercedesa W124, w którym podpięcie się do sterownika świateł nie stanowi chyba większego problemu) - wyjscia, które steroway diodami można podlaczyć do wlacznika swiatel
+3a) testowanie działania systemu zintegrowanego z samochodem
+
+punkt 4 jest opcjonalny i póki co nie jestesmy pewni czy jest do zrealizowania, glownymi zalozeniami sa punkty1-3
+4) rozeznanie, czy i w jaki sposób można mierzyć mgłę panującą na drodzę (jako urozmaicenie, można spróbować wykrywać mgłę oraz na tej podstawie włączać światła przeciwmgielne)
+4a) ewentualna implementacja układu pomiaru mgły i sterowania światłami przeciwmgielnymi w samochodzie oraz testowanie
 
 Wykorzystany sprzęt
 - mikrokomputer Raspberry Pi3 
+- kamera
 - detektory światła, np. fotorezystory(potrzebne bedzie kilka, aby mierzyć światło w różnych miejscach samochodu dla pewniejszego wyniku)
-- potencjalne czujniki mgły lub inne czujniki, które pośrednio mogą mierzyć mgłę (np poprzez pomiar wigloci oraz opadu deszczu - gdy nie pada deszcz, a wilgotność jest duża, wówczas panuje mgła - chyba :D )
+- potencjalne czujniki mgły lub inne czujniki, które pośrednio mogą mierzyć mgłę
+(np poprzez pomiar wigloci oraz opadu deszczu gdy nie pada deszcz, a wilgotność jest duża, wówczas panuje mgła - chyba :D )
 
 Otwarci jestesmy na wszelkie sugestie wzgledem powyzszych zalozen. 
