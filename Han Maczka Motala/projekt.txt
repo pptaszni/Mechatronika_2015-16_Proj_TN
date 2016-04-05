@@ -44,3 +44,12 @@ Zadania 6a, 6b, 6c będą realizowane równolegle. W trakcie rozwoju projektu po
 30.03.16 Przegląd czujników potrzebnych do realizacji projektu
 
 Po analizie założeń projektu dokonano wyboru odpowiednich rodzajów czujników do jego realizacji, a następnie wykonano zestawienie kilku konkretnych modeli czujników wymganych do realizacji każdego z zadań. Szczegóły zamieszczono w pliku pdf.
+
+===================================================
+
+
+06.04.16 Przegląd dostępnych na rynku gotowych rozwiązań automatycznego sterowania światłami i test czujników natężenia światła
+
+Opisano przykładowe rozwiązania automatycznego sterowania światłami na przykładzie asystenta świateł drogowych w Audi A4 i BMW 5 GT, oraz modułu oświetlenia dziennego PROELTEC MOD 301-12. Zapoznano się z rozwiązaniami do sterowania światłami, w tym z wykorzystywanym w realizacji projektu systemem z Toyoty Yaris II. 
+Zrealizowano również test dostępnego czujnika RGB TCS3200D oraz rozwiązania wykorzystującego fotorezystor, a uzyskane wyniki badań opracowano w formie wykresów.
+Szczegóły zamieszczono w plikach pdf.
