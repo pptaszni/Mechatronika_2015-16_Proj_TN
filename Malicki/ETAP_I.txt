@@ -1,0 +1,26 @@
+﻿Ustalenia wykonania urządzenia:
+
+* Odczyt kodów będzie się odbywał za pomocą przerwań i timerów:
+	- wykorzystane zostaną dwa przerwania o zewnętrznym wyzwalaniu, jedno na zboczu narastającym do startu timera, 
+	a drugie na opadającym do odczytu czasu trwania sygnału. Na jego podstawie będzie podejmowana decyzja o znaczeniu sygnału.
+
+* Sygnał kodowy będzie kondycjonowany przez komparator histerezowy:
+	- wynika to z faktu ze kody są podawane w logice ujemnej oraz poziom niski zależy od obciążenia 
+	(dla diody z rezystorem ~2.5V dla 1 i  ~14V dla 0 względem masy pojazdu).  
+	Komparator zapewni pewność przełączeń pomiędzy stanami logicznymi i przejście na poziom napięć logicznych +5V.
+
+* Zasilanie należy pobrać bezpośrednio z akumulatora:
+	- Zasilanie w złączu diagnostycznym włączane jest wraz z zapłonem.  
+
+* Możliwość regulacji nastaw czasowych przed wykonaniem odczytu:
+	- Jeżeli w jakimś pojeździe czasy sygnału będą niezgodne z zaprogramowanymi progami, będzie możliwość zmiany progów za pomocą potencjometru.   
+
+* Opisy poszczególnych kodów usterek w zależności od badanego systemu i pojazdu będą znajdować się na karcie microSD:
+	- przy odpowiedniej konstrukcji programu umożliwi to jednorazowe zaprogramowanie mikrokontrolera, 
+	przy możliwych późniejszych zmianach w opisach kodów i dodawanie kolejnych pojazdów bez konieczności przeprogramowywania mikrokontrolera. 
+
+* Generowanie sygnału testującego urządzenie będzie generowane przez kartę dźwiękową komputera:
+	- Sygnały będę generowane w programie Matlab. Wykorzystując modulację amplitudową sygnału oraz zewnętrzny filtr obwiedniowy sygnału
+	 wraz z wzmacniaczem napięciowym możemy uzyskać dowolny przebieg sygnału testującego.
+	- W przypadku wykorzystania innego mikrokontrolera wymagane było by jego przeprogramowywanie po wykorzystaniu wszystkich zaprogramowanych sygnałów. 
+	A pomysł na Timerach NE555 pomimo skomplikowania był trudny w obsłudze  (konieczność ręcznego wyzwalania o określonych odstępach czasowych)

@@ -1,0 +1,19 @@
+﻿Terminy wykonania operacji:
+
+Etap I do 6.04:
+	Określenie sposobu wykonania pomiarów kodów błyskowych, sposobu generacji sygnału sprawdzającego urządzenie.
+
+Etap II do 13.04:
+	Wykonanie schematów układu wzmacniacza sygnału i układu urządzenia czytającego kody w programie EAGLE
+	(schematy już są, ale w Proteusie, który nagle odmówił zapisu plików. Uniemożliwia to dokonywanie zmian czy wykonania płytek PCB w tym programie);
+
+Etap III do 27.04:
+	Zmontowanie układu na płytkach stykowych, programowanie odczytu kodów, sprawdzanie poprawności działania;
+
+Etap IV do 11.05:
+	Zaprogramowanie odczytu danych z karty microSD. Stworzenie sposobu zapisu biblioteki kodów  na karcie;
+
+Etap V do 25.05:
+	Wykonanie płytek PCB, montaż urządzenia i sprawdzenie poprawności jego działania. Przygotowanie do zakończenia projektu.
+
+Terminy są luźne i uwzględniają możliwość wystąpienia opóźnień. W miarę możliwości chciałbym wykonać projekt we wcześniejszym terminie, lecz nie wiem czy to się uda.
