@@ -1,0 +1,11 @@
+﻿Płytkę STM32 Discovery będziemy mogli wypożyczyć w przyszły czwartek, nie mamy teraz dokładnych informacji na jej temat.
+
+Aktualne przyspieszenie pojazdu odczytamy z akcelerometru, prędkość policzymy przez całkowanie.
+Akcelerometr prawodopodobnie będzie na płytce Discovery (zakres +-8g, czyli wystarczający), jeśli nie, to dokupimy osobny moduł z tym czujnikiem.
+
+Czujnik położenia pedalu hamulca w samochodzie działa tylko binarnie. Potrzebujemy bardziej szczegółową informację na temat położenia pedalu,
+wykorzystamy w tym celu enkoder 24 imp./obr..
+
+Aktualnie jesteśmy w trakcie określania kształtu, sposobu mocowania spojlera. W przyszłym tygodniu postaramy się zamieścić bardziej szczegółowe informacje.
+
+W pliku "Schemat-komunikacji.pdf" przedstawiliśmy prosty schemat komunikacji.
