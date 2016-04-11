@@ -1,0 +1,13 @@
+Tytu³ projektu: Detekcja ludzi i dzikich zwierz¹t na poboczu.
+Opis: System daj¹cy znaæ gdy w promieniu X m pojawi siê cz³owiek lub dzikie zwierzê na drodze samochodu. 
+Fazy projektu:
+1. W pierwszej fazie projektu chcia³bym skupiæ siê na napisaniu algorytmu jakim bêdzie przetwarzany obraz.
+2. Kolejnym krokiem bêdzie napisanie programu w C++, który bêdzie przetwarza³ dostarczony obraz z kamery i zwraca³ sygna³ jeœli napotka „przeszkodê”
+3. Próba wykonania urz¹dzenia gotowego do pod³¹czenia do samochodu.
+
+Przepraszam, ¿e tak póŸno ale wczeœniej zapomnia³em zrobiæ push'a dlatego nic siê nie pokaza³o. Obecnie jestem na etapie przegl¹dania algorytmów.
+Póki co chcem system zrobiæ na kamerze termowizyjne. Jeœli to siê uda myœla³em o rozwiniêciu systemu o dodatkow¹ kamerê, która
+umo¿liwia³a by dzia³anie sysemu przy du¿ej mgle (np. system LIDAR).
+
+Jeœli chodzi o sprzêt to narazie skupiam siê na napisaniu dzia³aj¹cego algorytmu i przetestowaniu go w C++.
+PóŸniej myœla³em o zakupie jakiejœ p³ytki np. Raspberry lub jakiego STM32
