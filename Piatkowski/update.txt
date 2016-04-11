@@ -1,0 +1,2 @@
+Update 12.04.2015
+System operacyjny na rapberry zostal zainstalowany i dziala poprawnie. Skonfigurowalem rowniez serwer vnc aby moc sie komunikowac z laptopem.
