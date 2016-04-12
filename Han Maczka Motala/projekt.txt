@@ -53,3 +53,11 @@ Po analizie założeń projektu dokonano wyboru odpowiednich rodzajów czujnikó
 Opisano przykładowe rozwiązania automatycznego sterowania światłami na przykładzie asystenta świateł drogowych w Audi A4 i BMW 5 GT, oraz modułu oświetlenia dziennego PROELTEC MOD 301-12. Zapoznano się z rozwiązaniami do sterowania światłami, w tym z wykorzystywanym w realizacji projektu systemem z Toyoty Yaris II. 
 Zrealizowano również test dostępnego czujnika RGB TCS3200D oraz rozwiązania wykorzystującego fotorezystor, a uzyskane wyniki badań opracowano w formie wykresów.
 Szczegóły zamieszczono w plikach pdf.
+
+===================================================
+
+
+13.04.16 Dobór elementów układu
+
+Dokonaliśmy ostatecznego wyboru elementów elektronicznych. Zdecydowaliśmy się jednak zastosować mikrokomputer Raspberry Pi 3, ze względu na większe możliwości co do wyboru kamery. Pozostałe wybrane przez nas elementy: fotorezystor, czujnik temperatury i wilgotności DHT11, czujnik opadów deszczu YL-83 i Raspberry Pi Camera HD. Wszystkie elementy zostały już skompletowane i są do naszej dyspozycji.
+Udało nam się również uzyskać schematy elektryczne świateł w Toyocie Yaris II (plik: schematy_yaris.pdf).
