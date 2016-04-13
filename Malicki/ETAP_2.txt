@@ -1,0 +1,3 @@
+﻿Wrzucam schematy generatora i urządzenia. 
+Dodałem też układ PCB dla generatora, ale nie jestem pewny wymiarów kilku elementów, więc może się zmienić.
+Postanowiłem zrobić filtr obwiedniowy poza generatorem, w celu łatwego odłanczania go. Jesto filtr 3 elementowy (dioda, kondensator i rezystor).
