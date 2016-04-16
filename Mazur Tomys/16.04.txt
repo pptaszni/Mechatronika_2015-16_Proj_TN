@@ -1,0 +1,2 @@
+﻿Mamy już płytkę, jest to STM32VLDISCOVERY (STM32F1) z układem STM32F100RBT6B (Cortex M3).
+Konfigurujemy środowisko UVision 5 do współpracy z tym mikrokontrolerem.
