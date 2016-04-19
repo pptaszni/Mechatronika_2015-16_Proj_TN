@@ -1,0 +1,25 @@
+﻿Ciąg dalszy projektu:
+
+Do dnia 08.04.2016r.
+-zakupiono mikrokontroler STM32F4 (84zł) - discovery, na płytce jest wbudowany akcelerometr MEMS LIS3DSH (odpada lutowanie SMD, cena samego akcelerometru ~14pln netto), obsługiwany przez interfejs SPI. 
+ *dodatkowo opanowałem inicjalizację pracy mikrokontrolera (oscylatory zewnętrzn., wewn., PLL, "mryganie diodą") oraz podstawy środowiska Keil
+-zakupiono moduł transcievera CAN firmy Waveshare - 1 szt. (19zł) W module występuje układ TI SN65HVD230. Układ ten jest przystosowany do pracy na poziomie napięć 3-3,6V, co koresponduje z napięciami na mikrokontrolerze STM 32f407vtg (płytka Discovery). Zdecydowano się na zakup gotowego modułu, gdyż jest on już zmontowany (niestety przegląd rynku pokazał iż transcievery 3,3V są dostępne tylko w obudowach do montażu powierzchniowego, lutowanie nie jest proste), dodatkowo posiada konektory umożliwiające solidne podłączenie przewodu transmisji danych. Cena jednostkowa układu SN65HVD23x to ok 6zł, ale są problemy z zakupem detalicznym. 
+
+Drugim węzeł sieci będzie obsługiwany przez płytkę rozwojową z procesorem TMS320F2812. Zapomniałem o tym na początku, ale płytka ta ma już wbudowany transciever CAN (również SN65HVD230) oraz złącze do podpięcia przewodu sieciowego, także ze strony sprzętowej jest przygotowana do obsługi CAN. Problemem jest dokumentacja i schematy w języku nie zawsze angielskim (część dokumentacji płytki niestety po chińsku, co powoduje problemy z konfiguracją w środowisku CodeComposerStudio, ze względu na lekko zmodyfikowane inicjowanie pamięci RAM względem oryginalnego rozwiązania Texas Instrument).
+
+Do dnia 19.04.16r. Zbieranie informacji o konfiguracji sieci CAN dla procesora STM32F4, uruchomiony przykładowy program, komunikujący się pomiędzy kontrolerami CAN wbudowanymi w procesor (pełne wykonanie poniższego tutoriala: http://www.keil.com/appnotes/files/apnt_236.pdf). Chcę wykonać własny program w bardziej zrozumiały dla mnie sposób. Zbieranie informacji o konfiguracji SPI dla procesora i akcelerometru.
+
+Do dnia 26.04.16r. będę próbował napisać programy na obydwa procesory, tak by były w stanie między sobą się komunikować przez CAN
+
+Do dnia 03.05.16r. zaimplementuje w programie dla STM32F4 obsługę akcelerometru (SPI) oraz włacznika pedału hamulca, oraz uzależnienie wysłania paczki wiadomości przez CAN jeśli przeciążenie przy wciśniętym pedale hamulca osiągnie zadaną wartość.
+
+Do dnia 11.05.16r. dla procesora TI - zaimplementowanie w programie funkcji, która analizuje odbierane wiadomości i reaguje załączeniem poszczególnych wyjść, jeśli otrzyma informację o hamowaniu awaryjnym
+
+Do dnia 17.05.16r. połączenie (skrętka UTP, bez ekranowania ok 3m), montaż w samochodzie (podłączenie włącznika pedału hamulca, podłączenie żarówek kierunkowskazów tylnych [obliczenie wymaganego tranzystora (przekaźnik?). Próba drogowa.
+
+Jeśli uda się dotrzymać powyższych terminów, po wykonaniu wszystkich kroków spróbuję rozszerzyć układ o pomiar prędkości z jaką porusza się samochód. Można to zrobić na kilka sposobów:
+-odczyt wiadomości z szyny CAN, która zawiera informację o prędkości samochodu (Passat B5, do którego mam dostęp jest wyposażony w częściową szynę CAN, po dokumentach szkoleniowych VW można dotrzeć do normy w jakiej wysyłane są ramki CAN, jeśli ta informacja będzie dostępna, to dane to można wyłuskać z szyny)
+-skorzystanie z czujnika ABS i pobranie z niego informacji o prędkości (konieczność dopasowania poziomów sygnałów do uC)
+-montaż prostego czujnika na wale napędowym - magnes + czujnik halla (samochód bez żadnej elektroniki, impulsy prostokątne)
+
+Implementacja pomiaru prędkości pozwoli ograniczyć sygnalizację awaryjnego hamowania tylko dla prędkości np. autostradowych.

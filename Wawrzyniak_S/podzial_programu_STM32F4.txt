@@ -1,0 +1,13 @@
+﻿Aby uruchomić transmisję CAN (STM32)
+-inicjalizacja procesora (zegary) init.c
+-inicjalizacja CAN - ramka, prędkość, filtry can.c
+-inicjalizacjia SPI 
+-inicjalizacja akcelerometru
+-obsługa przerwań (od skrzynki odbiorczej CAN, od SPI, od akcelerometru)
+
+Wykorzystano dokumenty:
+http://www.st.com/web/en/resource/technical/document/programming_manual/DM00046982.pdf - opis rejestrów
+http://www.keil.com/appnotes/files/apnt_236.pdf przykładowy program
+http://eraycanli.com/2015/09/28/stm32f4-discovery-can-bus-communication/ przykładowy program
+
+W moim programie - brak obsługi ledów - niepotrzebne? - można rozważyć mrygnięcie przy wysłaniu wiadomości.
