@@ -61,3 +61,10 @@ Szczegóły zamieszczono w plikach pdf.
 
 Dokonaliśmy ostatecznego wyboru elementów elektronicznych. Zdecydowaliśmy się jednak zastosować mikrokomputer Raspberry Pi 3, ze względu na większe możliwości co do wyboru kamery. Pozostałe wybrane przez nas elementy: fotorezystor, czujnik temperatury i wilgotności DHT11, czujnik opadów deszczu YL-83 i Raspberry Pi Camera HD. Wszystkie elementy zostały już skompletowane i są do naszej dyspozycji.
 Udało nam się również uzyskać schematy elektryczne świateł w Toyocie Yaris II (plik: schematy_yaris.pdf).
+
+===================================================
+
+
+21.04.16 Testy czujnika temperatury i wilgotności oraz konfiguracja Rapsberry Pi 3 wraz z kamerą
+
+Raport znajduje się w pliku raport_21kwietnia.pdf. Oprócz tego dodana została dokumentacja czujnika DHT11 (plik: DHT11_datasheet.pdf).
