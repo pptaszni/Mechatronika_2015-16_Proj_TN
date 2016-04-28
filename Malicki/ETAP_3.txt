@@ -1,0 +1,8 @@
+﻿Zmontowałem oba układy. 
+Z wstępnych oględzin wynika że działają poprawnie. Nastąpiło kilka zmian, praktycznie kosmetycznych. 
+Przy projektowaniu płytki może się coś jeszcze zmienić, wiec wtedy zrobie update całości.
+
+Chciałem napisać program mikrokontrolera w Bascomie, ale z powodu ogrniczeń kompilatora (do 4kB programu) przejdę na język C.
+
+Prawdopodobnie nastąpią zmiany w funkcji Matlabowskiej generowania sygnału. Chodzi o inwersje amplitudy z 0 na 1 i z 1 na 0.
+Ponieważ sygnał po wyprostowaniu ma kształt prawidłowy względem zera, a ma mieć taki kształt względem 1 (+12V)
