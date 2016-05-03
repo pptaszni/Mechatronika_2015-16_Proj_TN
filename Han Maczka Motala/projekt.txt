@@ -65,6 +65,13 @@ Udało nam się również uzyskać schematy elektryczne świateł w Toyocie Yari
 ===================================================
 
 
-21.04.16 Testy czujnika temperatury i wilgotności oraz konfiguracja Rapsberry Pi 3 wraz z kamerą
+21.04.16 Testy czujnika temperatury i wilgotności oraz konfiguracja Raspberry Pi 3 wraz z kamerą
 
 Raport znajduje się w pliku raport_21kwietnia.pdf. Oprócz tego dodana została dokumentacja czujnika DHT11 (plik: DHT11_datasheet.pdf).
+
+===================================================
+
+
+04.05.16 Program do wykrywania świateł samochodów
+
+Raport znajduje się w pliku raport_4maja.pdf. Oprócz tego dodany został kod programu (plik: Kamera.py).
