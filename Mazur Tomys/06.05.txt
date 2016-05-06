@@ -1,0 +1,1 @@
+﻿Do sczytywania informacji z magistrali CAN korzystamy ze sterownika Microchip MCP2515 i interfejsu/ modułu odbiornika Philips TJA1050. Z MCP2515 komunikacja przez SPI, kod w trakcie opracowywania.
