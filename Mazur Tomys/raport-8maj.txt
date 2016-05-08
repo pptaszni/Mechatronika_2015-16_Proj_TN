@@ -1,0 +1,21 @@
+﻿Zdecydowaliśmy się zmienić płytkę z mikrokontrolerem z STM32VL Discovery na Arduino Uno.
+Głównym powodem tej zmiany jest to, że na płytce Discovery nie mamy wbudowanego konwertera USART-USB,
+przez co testowanie programu i poprawności odczytu wartości po CAN jest problematyczne. 
+Mikrokontroler STM32F100RB ma zdecydowanie więcej peryferiów i jest szybszy, ale jak na nasze potrzeby
+AVR z Arduino pod tym względem również jest wystarczające. Będziemy potrzebować 1 interfejs SPI do
+komunikacji z MCP2515, 1 lub 2 sygnaly PWM do komunikacji ze sterownikiem siłowników oraz piny do odczytu
+sygnałów z czujników krańcówych.
+
+Enkoder do sczytywania położenia pedału hamulca został zastąpiony przez czujniki krańcowe.
+Wynika to z małej ilości miejsca na montaż enkodera w miejscu mocowania pedału. Ponadto nie jest nam
+potrzebna informacja o dokładnej pozycji pedału. Zamiast zdecydowaliśmy się podzielić obszar ruchu
+pedału na trzy obszary (by sprawdzać jak mocno osoba kierująca chce zahamować). Samochód wyposażony
+jest już w jeden czujnik sprawdzający czy pedał hamulca został wciśnięty, wystarczy więc dodać dwa
+styczniki, które będą zamocowane z boku ramienia hamulca. Załączanie się kolejnych czujników pozwoli
+określić strefę wychylenia w której znajduje się pedał (narysowany zostanie schemat, który
+powinien to rozjaśnić).
+
+Odpowiadając na pytanie czy będziemy budować zamodelowane wcześniej skrzydło:
+Zaprojektowany przez nas model ma na celu pokazać tylko jak powinien wyglądać nasz spojler,
+jednak ze względu na skomplikowanie i koszt konstrukcji nie zostanie on rzeczywiście wykonany.
+Przewidujemy jednak prostą makietę, która pozwoli pokazać, że program i elektronika działają.
