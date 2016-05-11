@@ -1,0 +1,14 @@
+﻿Wstawiłem kilka zdjęć.
+
+Programowałem Urządzenie w C za pomocą Atmel Studio 7.0.
+Na chwilę obecną zgrubnie zaprogramowane są wszystkie funkcje z wyjątkiem obsługi karty SD.
+Jest tylko jej inicjalizacja i odczyt 1 sektora, dla sprawdzenie połączenia. 
+Program był pisany etapami dla sprawdzenie poprawności działania projektu połączeń. 
+Cały projekt został spakowany do pliku .rar .
+
+Zmontowałem oba układy z płytek stykowych na PCB.
+
+Wmontowałem Urządzenie w obudowę, pozostało dla niego praktycznie tylko programowanie.
+Generator wymaga tylko obudowania.
+
+Zmieniłem matlabowską funkcję generowania sygnałów. Dodatkowo zawiera generowanie domyślnej nazwy plików.
