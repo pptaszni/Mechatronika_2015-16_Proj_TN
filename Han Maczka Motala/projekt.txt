@@ -75,3 +75,10 @@ Raport znajduje się w pliku raport_21kwietnia.pdf. Oprócz tego dodana została
 04.05.16 Program do wykrywania świateł samochodów
 
 Raport znajduje się w pliku raport_4maja.pdf. Oprócz tego dodany został kod programu (plik: Kamera.py).
+
+===================================================
+
+
+15.05.16 Postępy nad programem
+
+Raport znajduje się w pliku raport_15maja.pdf. Oprócz tego dodane zostały kody programów: Czujniki.py, NagrywanieTestowe.py i ParametryProgowania.py.
