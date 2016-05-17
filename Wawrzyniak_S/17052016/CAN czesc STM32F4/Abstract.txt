@@ -1,0 +1,50 @@
+The CAN project is a simple demo program for 
+ST 'STM32F407VG' microcontroller using ST 'STM32F4-Discovery' Evaluation Board.
+Compliant to Cortex Microcontroller Software Interface Standard (CMSIS v2.0).
+
+See  www.keil.com/appnotes/files/apnt_236.pdf
+
+The STM32F401-DISCO board cannot be used as its processor (STM32F401) does not have a CAN controller.  This board looks almnost the same as the corect one.
+
+This is the wrong board:  http://www.st.com/web/catalog/tools/PF259098  Note it says STM32F401-DISCO on it in the corner.
+
+Use this board:  http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/PF252419  or similar.  You must use a board with a STM32F407 processor.
+
+
+
+Example functionality:
+ - Clock Settings:
+   - SYSCLK   =           168 MHz
+   - HCLK     = SYSCLK  = 168 MHz
+   - APB1 CLK = CAN CLK =  42 MHz
+
+Core Clock: for Serial Wire Viewer is 168 MHz.
+
+ - CAN controller speed: 500 kbits
+ - send converted changing value in first byte in CAN message
+   from CAN controller #2 to CAN Controller #1 
+
+This example shows how to use CAN peripheral.
+
+
+The CAN example is available in different targets:
+
+  STM32F407 RAM:      configured for on-chip RAM
+                      (used for target debugging)
+
+  STM32F407 Flash:    configured for on-chip Flash
+                      (used for production or target debugging)
+
+
+Note: A loopback between CAN1 and CAN2 is necessary for this demo.
+
+See schematic.png
+
+
+A Tiny Network without Transceiver ICs:
+
+Sometimes you have a CAN equipped processor on a low cost board but it has no CAN transceiver chips.
+Here is a method that can be used to create a small experimental network with such a board.  
+There will be no noise immunity and you might have to lower the speed….but many experimenters have made this work satisfactorily.  
+Use a signal diode similar to 1N914 or 1N4148.  Power supply diodes usually do not have a fast enough recovery time for CAN to function.
+See Schematic.png for details.

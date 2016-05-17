@@ -1,0 +1,138 @@
+******************************************************************************
+             TMS320C2000 Linker PC v6.2.0                      
+******************************************************************************
+>> Linked Sun Sep 28 15:50:35 2014
+
+OUTPUT FILE NAME:   <lab1.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 003f8002
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  RAMM0                 00000000   00000400  00000000  00000400  RWIX
+  BEGIN                 003f8000   00000002  00000000  00000002  RWIX
+  PRAMH0                003f8002   00000ffe  000000a9  00000f55  RWIX
+  RESET                 003fffc0   00000002  00000000  00000002  RWIX
+
+PAGE 1:
+  RAMM1                 00000400   00000400  00000400  00000000  RWIX
+  DRAMH0                003f9000   00001000  00000009  00000ff7  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.pinit     0    003f8002    00000000     UNINITIALIZED
+
+.text      0    003f8002    00000093     
+                  003f8002    00000044     rts2800_ml.lib : boot.obj (.text)
+                  003f8046    00000019                    : args_main.obj (.text)
+                  003f805f    00000019                    : exit.obj (.text)
+                  003f8078    00000014     main.obj (.text)
+                  003f808c    00000009     rts2800_ml.lib : _lock.obj (.text)
+
+.cinit     0    003f8095    00000016     
+                  003f8095    0000000a     rts2800_ml.lib : _lock.obj (.cinit)
+                  003f809f    0000000a                    : exit.obj (.cinit)
+                  003f80a9    00000002     --HOLE-- [fill = 0]
+
+.reset     0    003fffc0    00000002     DSECT
+                  003fffc0    00000002     rts2800_ml.lib : boot.obj (.reset)
+
+.stack     1    00000400    00000400     UNINITIALIZED
+                  00000400    00000400     --HOLE--
+
+.ebss      1    003f9000    00000009     UNINITIALIZED
+                  003f9000    00000004     rts2800_ml.lib : _lock.obj (.ebss)
+                  003f9004    00000004                    : exit.obj (.ebss)
+                  003f9008    00000001     main.obj (.ebss)
+
+
+GLOBAL DATA SYMBOLS: SORTED BY DATA PAGE
+
+address     data page           name
+--------    ----------------    ----
+00000400      10 (00000400)     __stack
+
+003f9000    fe40 (003f9000)     __unlock
+003f9002    fe40 (003f9000)     __lock
+003f9004    fe40 (003f9000)     ___TI_cleanup_ptr
+003f9006    fe40 (003f9000)     ___TI_dtors_ptr
+003f9008    fe40 (003f9000)     _k
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+003f8002   .text
+003f805f   C$$EXIT
+00000800   __STACK_END
+00000400   __STACK_SIZE
+00000001   __TI_args_main
+003f9004   ___TI_cleanup_ptr
+003f9006   ___TI_dtors_ptr
+ffffffff   ___binit__
+ffffffff   ___c_args__
+003f8095   ___cinit__
+003f8095   ___etext__
+ffffffff   ___pinit__
+003f8002   ___text__
+003f8046   __args_main
+003f9002   __lock
+003f8094   __nop
+003f8090   __register_lock
+003f808c   __register_unlock
+00000400   __stack
+003f9000   __unlock
+003f805f   _abort
+003f8002   _c_int00
+003f8061   _exit
+003f9008   _k
+003f8078   _main
+ffffffff   binit
+003f8095   cinit
+003f8095   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000400   __STACK_SIZE
+00000400   __stack
+00000800   __STACK_END
+003f8002   .text
+003f8002   ___text__
+003f8002   _c_int00
+003f8046   __args_main
+003f805f   C$$EXIT
+003f805f   _abort
+003f8061   _exit
+003f8078   _main
+003f808c   __register_unlock
+003f8090   __register_lock
+003f8094   __nop
+003f8095   ___cinit__
+003f8095   ___etext__
+003f8095   cinit
+003f8095   etext
+003f9000   __unlock
+003f9002   __lock
+003f9004   ___TI_cleanup_ptr
+003f9006   ___TI_dtors_ptr
+003f9008   _k
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[29 symbols]

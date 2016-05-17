@@ -1,0 +1,11 @@
+﻿Przesyłam film z obecnego etapu prac. Udało się osiągnąć założenie - procesory komunikują się między sobą wykorzystując protokół CAN. Niestety praca w dwóch różnych środowiskach równolegle nie była najprzyjemniejsza.
+Obecnie czujnik przyspieszenia na płytce STM wykrywa zmianę przyspieszenia w osi Z (z -g na +g), gdy wartość przyspieszenia przekracza ustaloną wartość, wysyłana jest wiadomość przez CAN o niskim ID, tak by została odebrana przez Mailbox nr1. Po odebraniu, procesor TI, włącza sekwencję migania z częstotliwością 3hz (na razie diodą led - wyjście GPIOB0), dopóki nie odbierze wiadomości o wyższym ID - odebranej przez Mailbox 2. Jest ona wysyłana gdy przyspieszenie spada poniżej ustalonej wartości.
+Transciever WaveShare nie sprawia problemów (jest zasilany z STMF4discovery - tylko 2,89V, poniżej zalecanego minimum z noty katalogowej), kontrolery CAN ustawione są na 500kbit/s, należy zachować kolejność włączania procesorów, inicjalizacja CAN w stm prawdopodobnie potrzebuje dwóch kontrolerów w sieci.
+
+Pozostaje zmontować układ przekaźnika(do świateł) oraz transoptora(informacja o wciśnięciu pedału hamulca), wyliczono wartości napięć i prądów - elementy dopasowane są w drodze ze sklepu(mam nadzieję że dotrą do końca tygodnia).
+
+Procesory łączą się ze sobą dwumetrową skrętką UTP.
+
+W programach dobrze byłoby rozwinąć obsługę przerwań, niestety w TMS320 jest niezbyt intuicyjna, miałem problem z odróżnieniem przerwań.
+
+Przed montażem w pojeździe, zmienione zostaną ustawienia akcelerometru - będzie reagował na przyspieszenia trwające min 20ms (eliminacja szpilek), w osi X, zamiast Z.
