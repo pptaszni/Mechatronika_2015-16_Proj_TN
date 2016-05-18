@@ -1,0 +1,19 @@
+Z powodu utrudnień na linii Chiny – Polska czekaliśmy na przesyłkę zawierającą kamerkę do RPi prawie dwa miesiące, ale przyszła w zeszłym tygodniu i wzięliśmy się ostro do pracy.
+
+1.	Skonfigurowany został Raspberry Pi 3, po podłączeniu przez HDMI do monitora, 
+Kornel skonfigurował Raspbiana oraz umożliwił podłączenie go przez serwer TightVNC 
+(mamy ograniczony dostęp do monitora z HDMI, dlatego musieliśmy wymyśleć coś innego)
+Okazało się, że mimo wbudowanego modułu Wi-Fi do RPi3, po podłączeniu serwera VNC niemożliwym było połączenie się z siecią bezprzewodową, co również utrudniło instalowanie wymaganych bibliotek.
+Finalnie, doinstalowane zostały aktualizacje oraz biblioteki, między innymi, instalująca się prawie 3 godziny biblioteka OpenCV w wersji 3.1 oraz inne, mniejsze biblioteki do akwizycji i przetwarzania obrazów 
+(numpy, piCamera, ImageTK i kilka innych)
+
+2.	Po zamontowaniu kamerki, stworzyliśmy od podstaw program w Pythonie, mający na celu akwizycje obrazu oraz znalezienie na nim źródeł światła. 
+Po 2 dniach pracy osiągnęliśmy całkiem dobry efekt: obraz jest wyświetlany w czasie rzeczywistym. 
+Delikatnie się przycina, ale powinno to w zupełności wystarczyć do naszego zadania. 
+Dołączone zostało zdjęcie przedstawiające zrzut ekranu z komputera z TightVNC Viewer i odpalonego na nim programu będącego efektem naszej pracy. 
+Widać na nim obraz z kamery oraz zaznaczone czerwonym kółkiem źródło światła. 
+Wykorzystany został do tego jeden z podstawowych algorytmów OpenCV – Simple Blob Detection.
+
+3.	Jeśli chodzi o montaż tego sprzętu w samochodzie: przekaźniki tranzystorowe jak najbardziej powinny dać radę i nie są skomplikowane do wykonania – nawet na płytce stykowej da radę. 
+Problemem jednak okazał się fakt, że długie światła włącza się wajchą obok kierownicy, którą jest bardzo ciężko zdemontować, a nie pokrętłem jak myśleliśmy. 
+Można jednak spróbować się wpiąć przy samych reflektorach.
