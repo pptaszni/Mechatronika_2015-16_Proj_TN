@@ -1,0 +1,27 @@
+﻿Dodaliśmy aktualną wersję kodu:
+1) kod/can1/can1.ino - sprawdzenie dzialania komunikacji CAN. 
+MCP2515 zostało tak ustawione, żeby wysyłało do mikrokontrolera tylko 
+dane dot. prędkości (informacja nt. wciśnięcia pedału hamulca nie będzie 
+tutaj odczytywana). Działanie modułu CAN było już sprawdzane (wynik pozytywny),
+ale w innej wersji kodu, bez wykorzystania maski i filtrów, które są realizowane 
+po stronie MCP2515, a nie naszego mikrokontrolera.
+2) kod/algorytmdzialania/algorytmdzialania.ino - program właściwy. Zademonstrować 
+działanie programu z modułem CAN jest niewykonalne, bo nie mamy dostepu 
+we Wrocławiu do odpowiedniego samochodu. Wartość odczytywana przez CAN 
+zostanie więc zasymulowana przez wpisywanie 0-255 w konsoli i zatwierdzenie enterem.
+W programie zostało jeszcze napisanie funkcji "enkoderVSpwm()" (porównującej odczyt wynikajacy
+z enkodera z pozycją sojlera teoretyczną wynikajacą z zadanego napięcia), korygujPozycjeSpojlera()
+(funkcji reagującej na enkoderVSpwm()).
+Czy przerwanie odpowiadajace za działanie enkodera działa odpowiednio nie było jeszcze sprawdzane, 
+bo musimy go najpierw przylutować.
+
+Przewidujemy, że projekt będzie gotowy do końca maja.
+
+Projekt fizyczny będzie się składał z:
+	1) Arduino Uno i rozwiniętego kodu algorytmdzialania.ino,
+	2) 3 czujników krańcowych,
+	3) serwonapędu sterowanego z Arduino (najprawdopodobniej przez PWM),
+	4) enkodera nastawianego ręcznie w celu pokazania reakcji serwa na 
+	   niezgodność pozycji teoretycznej spojlera z wynikiem z enkodera,
+	5) zadawanie prędkości (symulacja CAN) przez konsolę portu szeregowego.
+	
