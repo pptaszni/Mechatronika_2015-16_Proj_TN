@@ -1,0 +1,20 @@
+﻿Zakończenie Projektu.
+
+Urządzenie diagnostyczne CHECK-2000:
+-wykonałem tylny panel (dodane zdjęcie);
+-stworzyłem bazę danych kodów usterek za pomocą matlaba (dodany cały folder z plikami nie obrobionymi, obrobionymi i funkcjami matlaba);
+-zaprogramowałem odczyt komunikatów błędów  z karty SD. Wprowadziłem kilka poprawek do programu ( dodany folder z całym projektem z atmel studio 7.0);
+-napisałem instrukcję obsługi dla urządzenia CHECK-2000 (dodany pdf);
+
+Generator sygnału:
+-zamontowanie układu w obudowie i wykonanie panelu górnego (dodane zdjęcie);
+-wykonanie filtru obwodowego górnego (dodane zdjęcie);
+-wykonanie diody na 12V (dodane zdjęcie);
+
+Co do założen projektowych to nie udało się zrealizować następującego:
+{
+	- urządzenie nie będzie podawać typu usterki, z powodu rozbieżności znaczeń kodów pomiędzy markami (zwłaszcza pomiędzy Ford i BMW);
+}
+ponieważ urządzenie podaje typ usterki zależnie od pojazdu (o ile jest wgrany w bazę danych);
+
+Posłałem maila z pytaniem o spotkanie na pawel.ptasznik@pwr.edu.pl

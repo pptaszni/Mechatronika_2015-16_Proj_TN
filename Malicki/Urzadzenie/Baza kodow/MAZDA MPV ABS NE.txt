@@ -1,0 +1,15 @@
+11: Czujnik obrotow kola PP
+12: Czujnik obrotow kola LP
+13: Czujnik obrotow kola PT
+14: Czujnik obrotow kola LT
+15: Czujnik obrotow kola 
+22: Elektryka rozdzielacza / elektrozawor PP
+24: Elektrozawor LP
+26: Elektrozawor PT
+27: Elektrozawor LT
+29: Obwod PP-LT
+30: Obwod LP-PT
+51: Przekaznik trybu awaryjnego (fail-safe)
+53: Przekaznik silnika pompy / silnik
+61: Jednostka sterujaca
+63: Zasilanie

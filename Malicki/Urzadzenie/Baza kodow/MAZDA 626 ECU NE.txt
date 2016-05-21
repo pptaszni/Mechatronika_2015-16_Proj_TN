@@ -1,0 +1,29 @@
+2: Czujnik polozenia walu 
+3: Czujnik polozenia walu 
+6: Czujnik predk. wlasnej pojazdu 
+8: Przeplywomierz powietrza
+9: Czujnik temp. silnika 
+11: Czujnik temperatury powietrza zasysanego
+12: Czujnik polozenia przepustnicy
+14: Czujnik cisnienia atmosferycznego – EMS
+15: Czujnik lambda
+17: Uklad sprzezenia zwrotnego
+22: Sygnal zaplonu na wejsciu EMS
+23: Czujnik lambda
+24: Uklad sprzezenia zwrotnego
+25: Elektrozawor regulacji cisnienia
+26: Elektrozawor pojemnika z weglem aktywnym
+28: Elektrozawor podcisnienia w EGR
+34: Elektrozawor regulacji wolnych obrotow A
+55: Czujnik predkosci wlasnej pojazdu
+56: Czujnik temp. oleju w skrzyni AT
+60: Elektrozawor biegu 1/2 w skrzyni AT
+61: Elektrozawor biegu 2/3 w skrzyni AT
+62: Elektrozawor biegu 3/4 w skrzyni AT
+63: Elektrozawor lock-up w skrzyni AT
+64: Elektrozawor biegu 3/2 w skrzyni AT
+65: Elektrozawor lock-up w skrzyni AT
+66: Elektrozawor cisnienia w skrzyni AT
+67: Przekaznik dmuchawy pierwszego stopnia
+68: Przekaznik dmuchawy drugiego stopnia
+69: Czujnik termiczny ukladu chlodzenia

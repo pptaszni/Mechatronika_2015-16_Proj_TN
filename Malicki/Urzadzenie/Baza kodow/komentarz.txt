@@ -1,0 +1,1 @@
+komentarz do bazy kodow bledow. max 1024 znaki, calkowicie pomijane w urzadzeniu. 

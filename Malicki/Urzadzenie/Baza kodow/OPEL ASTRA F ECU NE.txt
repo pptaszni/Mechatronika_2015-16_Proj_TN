@@ -1,0 +1,48 @@
+12: Rozpoczecie diagnostyki.
+13: Sonda-Lambda - brak zmiany napiecia.
+14: Czujnik temp. cieczy chlodzacej - nap. za niskie.
+15: Czujnik temp. cieczy chlodzacej - nap. za wysokie
+16: Czujnik 1 granicznej wartosci stukowej.
+17: Czujnik 2 granicznej wartosci stukowej.
+18: System regulacji granicznej wartosci stukowej.
+18: System regulacji granicznej wartosci stukowej.
+19: Indukcyjny nadajnik impulsowy.
+21: Potencjometr przepustnicy - nap. za wysokie.
+22: Potencjometr przepustnicy - nap. za niskie.
+24: Czestotliwosciowy nadajnik predkosci - brak impulsow.
+25: Zawor wtryskowy - nap. za wysokie.
+29: Przekaznik pompy paliwowej - nap. za niskie.
+32: Przekaznik pompy paliwowej - nap. za wysokie.
+33: Czujnik cisnieniowy Rura ssaca - nap. za wysokie.
+34: Czujnik cisnieniowy Rura ssaca - nap. za niskie.
+35: Silnik krokowy wolnych obrotow.
+41: Sygnal zaplonu (2/3) - nap. za wysokie.
+42: Sygnal zaplonu (1/4) - nap. za wysokie.
+42: Brak elektronicznego przestawienia zaplonu.
+43: Liniowy System Recyrkulacji.
+44: Sonda-Lambda - spaliny za ubogie.
+45: Sonda-Lambda - spaliny za bogate.
+47: Zawor AGR.
+49: Bateria - nap. za wysokie.
+51: Pamiec PROM - blad programowy pamieci.
+52: Przekaznik wtornego pow. dolotowego - nap. za niskie.
+53: Przekaznik wtornego pow. dolotowego - nap. za wysokie.
+55: Modul sterujacy silnika (komputer).
+56: Zawor elektromag.  wtornego pow. - nap. za niskie.
+57: Zawor elektromag.  wtornego pow. - nap. za wysokie.
+61: Zawor odpow.nia zbiornika - nap. za niskie.
+62: Zawor odpow.nia zbiornika - nap. za wysokie.
+63: Sygnal zaplonu (2/3) - nap. za niskie.
+64: Sygnal zaplonu (1/4) - nap. za niskie.
+69: Czujnik temp. zasysanego pow. - nap. za niskie.
+71: Czujnik temp. zasysanego pow. - nap. za wysokie.
+75: Kontrola momentu obrotowego - nap. za niskie.
+76: Sygnal ingerencji w moment obrotowy na stalym poziomie.
+81: Zawor wtryskowy - nap. za niskie.
+83: Immobiliser: inicjacja. Bledny kod czestotliwosci.
+84: Immobiliser: inicjacja. Bledny kod czestotliwosci.
+85: Immobiliser: inicjacja. Bledny kod czestotliwosci.
+87: Przekaznik klimatyzacji: nap. niskie.
+88: Przekaznik klimatyzacji: nap. wysokie.
+92: Czujnik Halla na walku rozrzadu - brak impulsow.
+93: Modul sterujacy (QUAD - poczworny).

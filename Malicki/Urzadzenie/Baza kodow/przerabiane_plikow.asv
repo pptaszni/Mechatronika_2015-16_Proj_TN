@@ -1,0 +1,42 @@
+function  [sygnal] = generator_sygnalu_10kHz(ile_powt, kody,nazwa_pliku)
+%SKRYPT DO PRZERABIANIA PLIKOW
+
+
+IDNED = fopen('MAZDA 626 ABS NE.txt');  %otwarcie pliku niesformatowanego
+IDED = fopen('MAZDA 626 ABS.txt','w');  %otwarcie pliku sformatowanego
+j=1;
+while j<100
+    str = fgetl(IDNED); %wczytanie jednej linijki
+    if str==-1
+        str_1 = sprintf('%u: Nierozpoznany kod.', j);
+        m = numel(str_1);     %odczyt d³ugoœci stringu
+        for i=m:61
+            str_1 = [str_1 0];  % uzupe³nienie stringo NULL'ami
+        end
+        str_1 = [str_1 13 10];  % dodanie znaków koñca lini
+        fwrite(IDED,str_1); % zapis linijki do pliku
+        j=j+1;
+    else
+        kod = sscanf(str,'%u');
+        while j<kod
+            str_1 = sprintf('%u: Nierozpoznany kod.', j);
+            m = numel(str_1);     %odczyt d³ugoœci stringu
+            for i=m:61
+                str_1 = [str_1 0];  % uzupe³nienie stringo NULL'ami
+            end
+            str_1 = [str_1 13 10];  % dodanie znaków koñca lini
+            fwrite(IDED,str_1); % zapis linijki do pliku
+            j=j+1;
+        end
+        m = numel(str);     %odczyt d³ugoœci stringu
+        for i=m:61
+            str = [str 0];  % uzupe³nienie stringo NULL'ami
+        end
+        str = [str 13 10];  % dodanie znaków koñca lini
+        fwrite(IDED,str); % zapis linijki do pliku
+        j=j+1;
+    end
+end
+fclose(IDNED);  %zamkniecie pliku
+fclose(IDED);   %zamkniecie pliku
+type('MAZDA 626 ABS.txt');  %wyswietlenie zawartosci pliku
