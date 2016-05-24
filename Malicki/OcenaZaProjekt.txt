@@ -1,0 +1,13 @@
+[1] : 20
+[2] : 17
+[3] : 9
+[4] : Null
+[5] : 18
+
+Comment:
+[1] : zalozenia spelnione w 100%, zaimplementowane opcjonalne funkcjonalnosci, urzadzenie dziala bardzo dobrze, jest wykonane elegancko
+[2] : systematyczna praca przez caly semestr, postepy raportowane w miare czesto
+[3] : praca samodzielna, integracja elektroniki, oprogramowania i interfejsu pojazdu
+[4] : czekamy na ocene kolegow
+[5] : zaprezentowano poprawnie dzialajace urzadzenie oraz srodowisko testowe, przygotowano przejrzysta dokumentacje dla uzytkownika, mozna bylo jeszcze sprobowac nagrac diagnostyke rzeczywistego obiektu
+
