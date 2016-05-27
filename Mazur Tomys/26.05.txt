@@ -1,0 +1,2 @@
+﻿Zaktualizwana wersja kodu, jeszcze musimy go uporządkować,
+zmienić kilka rzeczy, pozbyć się zagnieżdzonych funkcji.

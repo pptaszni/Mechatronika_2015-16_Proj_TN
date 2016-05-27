@@ -1,18 +1,33 @@
-//piny stycznikow: 3,4,5. Styczniki podpiete jako NO
-//enkoder: pin 2
-//PWM do sterowania silownikiem/ serwmomechanizmem - pin 
-//na razie zalozenie, ze:
-//                    sterownik silownika jest sterowany analogowo napieciem 0-5 V
-//                      0V pozycja najnizsza/ do szybkiej jazdy (PWM 0)
-//                      5V - maksymalne hamowanie (PWM 255)
-//                    za pinem 6 w takim przypadku nalezaloby dać filtr dolnoprzepustowy, parametry 4kOm, >=10uF (czestotliwosc na pinie 6 to 977 Hz)
+/* 
+ * Kod programu do Arduino Uno do sterowania pozycją spojlera.
+ */
 
+/*---------------------------*/
+#include <Servo.h>
+#define TESTY 1
+
+/*PINY, aliasy*/
+/*---------------------------*/
+#define stycznik1 7
+#define stycznik2 4
+#define stycznik3 5
+#define enkoderA 2
+#define enkoderB 3
+#define serwo1 9
+
+#define can_predkosc 0x0D
 /*---------------------------*/
 
 /*ZMIENNE*/
 /*---------------------------*/
+//zmienne powiazane z CAN
 long unsigned int rxId=0x0D; //PID predkosci
 unsigned char rxBuf[8];
+//pozostale zmienne
+Servo Serwo1;
+unsigned char aktualnaPozycja=0;
+unsigned char staraPozycja=0;
+unsigned char koncowaPozycja=0
 unsigned char jakMocnoHamujemy;
 volatile unsigned char stanEnkodera;
 enum silaHamowania{
@@ -31,35 +46,54 @@ enum pozycjaSpojlera{
 /*FUNKCJE*/
 /*---------------------------*/
 void liczEnkoder(){//liczenie sygnalow z enkodera
-  stanEnkodera++;
+    stanEnkodera++;
+    if(staraPozycja-koncowaPozycja<0){
+      aktualnaPozycja=staraPozycja+stanEnkodera;
+    }
+    else if(staraPozycja-koncowaPozycja>0){
+      aktualnaPozycja=staraPozycja-stanEnkodera;
+    }
+    else{
+      
+    }
 }
-void enkoderVSpwm(){//sprawdzenie czy pozycja odczytana na podst. enkodera zgadza sie z wynikajaca z wymuszenia przez napiecie
-                    //bedzie wywolywane w ustawSpojler() po analogWrite()
-  //...
+void enkoderVSpwm(){//wysyla do serwa sygnal zalezny od aktualnej pozycji
+  if(aktualnaPozycja!=koncowaPozycja){
+    if(aktualnaPozycja-koncowaPozycja<0){
+      Serwo1.write(93);
+    }
+    else{
+      Serwo1.write(87);
+    }
+  }
+  if(aktualnaPozycja==koncowaPozycja){
+    stanEnkodera=0;
+    Serwo1.write(90);
+    staraPozycja=aktualnaPozycja;
+  }  
 }
-//void korygujPozycjeSpojlera()//funkcja majaca korygowac ewentualny blad-wynik funkcji enkoderVSpwm()
 void sprawdzJakMocnoHamujemy(){
   jakMocnoHamujemy=wogole;
-  if(!digitalRead(3)){        //NO, pullup i drugi pin podlaczony do GND, wiec gdy wcisniety, to pojawia sie stan niski
-    jakMocnoHamujemy=troche;
-    if(!digitalRead(4)){
+  if(!digitalRead(stycznik1)){        //NO, pullup i drugi pin podlaczony do GND, wiec gdy wcisniety, to pojawia sie stan niski
+    jakMocnoHamujemy=troche;    
+    if(!digitalRead(stycznik2)){
       jakMocnoHamujemy=srednio;
-      if(!digitalRead(5)){
+      if(!digitalRead(stycznik3)){
         jakMocnoHamujemy=wgniatamywpodloge;
       }
     }
   }  
 }
 void sterowanieSpojlerem(){
-  if(rxId==0x0D && jakMocnoHamujemy==wogole){//jesli okreslona predkosc i nie hamujemy
-    if(rxBuf[0]>90){          //jezeli predkosc >90 km/h
+  if(rxId==can_predkosc && jakMocnoHamujemy==wogole){//jesli okreslona predkosc i nie hamujemy
+    if(rxBuf[0]>40){          //jezeli predkosc >40 km/h
       ustawSpojler(doJazdySzybkiej);
     }
-    else if (rxBuf[0]<=90){   //jezeli predkosc <=90 km/h
+    else if (rxBuf[0]<=40){   //jezeli predkosc <=40 km/h
       ustawSpojler(neutralna);
     }
   }
-  else if(rxId==0x0D && !(jakMocnoHamujemy==wogole)){//jesli okreslona predkosc i wcisniety pedal hamulca
+  else if(rxId==can_predkosc && !(jakMocnoHamujemy==wogole)){//jesli okreslona predkosc i wcisniety pedal hamulca
     ustawSpojler(hamowanie);
   }
   else{//jesli predkosc nie jest znana (blad komunikacji, brak odczytu)
@@ -68,32 +102,32 @@ void sterowanieSpojlerem(){
 }
 void ustawSpojler(pozycjaSpojlera poz){
   if(poz==neutralna){
-    analogWrite(6,10);
+    koncowaPozycja=20;
   }
   else if(poz==doJazdySzybkiej){
-    analogWrite(6,50);
+    koncowaPozycja=0;
   }
   else if(poz==hamowanie){
     if(jakMocnoHamujemy==troche){
-      analogWrite(6,90);
+      koncowaPozycja=(50);
     }
     else if(jakMocnoHamujemy==srednio){
-      if(rxBuf[0]<=90){//rozne pozycje spojlera przy takim samym hamowaniu przy wiekszej i mniejszej predkosci
-        analogWrite(6,180);
+      if(rxBuf[0]<=40){//rozne pozycje spojlera przy takim samym hamowaniu przy wiekszej i mniejszej predkosci
+        koncowaPozycja=(20);
       }
-      else if(rxBuf[0]>90){
-        analogWrite(6,180);
+      else if(rxBuf[0]>40){
+        koncowaPozycja=(70);
       }
       else{
         ustawSpojler(neutralna);
       }
     }
     else if(jakMocnoHamujemy==wgniatamywpodloge){
-      if(rxBuf[0]<=90){
-        analogWrite(6,255);
+      if(rxBuf[0]<=40){
+        koncowaPozycja=(20);
       }
-      else if(rxBuf[0]>90){
-        analogWrite(6,255);
+      else if(rxBuf[0]>40){
+        Serwo1.write(90);
       }
       else{
         ustawSpojler(neutralna);
@@ -109,17 +143,39 @@ void ustawSpojler(pozycjaSpojlera poz){
 /*---------------------------*/
 void setup(){
   Serial.begin(115200);
-  pinMode(3,INPUT_PULLUP); //stycznik1
-  pinMode(4,INPUT_PULLUP); //stycznik2
-  pinMode(5,INPUT_PULLUP); //stycznik3
-  pinMode(2,INPUT_PULLUP); //enkoder
-  pinMode(6,OUTPUT); //sygnal PWM sterujacy
-  attachInterrupt(digitalPinToInterrupt(2), liczEnkoder, RISING);//funkcja liczEnkoder() wywolywana przez zewn. przerwanie na pinie 2
+#if TESTY==1
+  Serial.println("\tTO SA TESTY! ");
+#endif
+#if TESTY==0
+  Serial.println("\tTESTY=0 "); 
+#endif
+  Serwo1.attach(9);
+  pinMode(stycznik1,INPUT_PULLUP); //stycznik1
+  pinMode(stycznik2,INPUT_PULLUP); //stycznik2
+  pinMode(stycznik3,INPUT_PULLUP); //stycznik3
+  pinMode(enkoderA,INPUT_PULLUP); //enkoder pin A
+  pinMode(enkoderB,INPUT_PULLUP); //enkoder pin B
+  pinMode(serwo1,OUTPUT); //serwo
+  attachInterrupt(digitalPinToInterrupt(enkoderA), liczEnkoder, FALLING);//funkcja liczEnkoder() wywolywana przez zewn. przerwanie na pinie 2
 }
 void loop(){
   sprawdzJakMocnoHamujemy();
   sterowanieSpojlerem();
-  delay(100);
+  enkoderVSpwm();
+#if TESTY==1
+  static unsigned long i=0;
+  if(!(i%5000)){
+    Serial.println(i);
+    Serial.print("predkosc: "); Serial.println(rxBuf[0]);
+    Serial.print("licznik enkodera: "); Serial.println(stanEnkodera);
+    Serial.print("jakMocnoHamujemy: "); Serial.println(jakMocnoHamujemy,BIN);
+    Serial.print("sygnal na serwo1: "); Serial.println(Serwo1.read());
+    Serial.print("koncowa pozycja: "); Serial.println(koncowaPozycja);
+    Serial.print("aktualna pozycja: "); Serial.println(aktualnaPozycja);
+    i=0;
+  }
+  i++;
+#endif
 }
 void serialEvent(){//wartosc predkosci 0-255 wpisuje sie w konsoli, "symulacja" dzialania MCP2515
   while (Serial.available()>0){
