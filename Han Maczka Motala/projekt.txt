@@ -82,3 +82,10 @@ Raport znajduje się w pliku raport_4maja.pdf. Oprócz tego dodany został kod p
 15.05.16 Postępy nad programem
 
 Raport znajduje się w pliku raport_15maja.pdf. Oprócz tego dodane zostały kody programów: Czujniki.py, NagrywanieTestowe.py i ParametryProgowania.py.
+
+===================================================
+
+
+29.05.16 Dalsze postępy nad programem
+
+Raport znajduje się w pliku raport_29maja.pdf. Oprócz tego dodany został kod programu: CaloscTesty.py.
