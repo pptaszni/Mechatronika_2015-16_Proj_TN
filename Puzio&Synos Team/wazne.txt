@@ -1,1 +1,9 @@
  Do poprawnego dzia³ania programu konieczne jest dodatnie bilioteki qcustomplot.cpp i qcustomplot.h
+
+
+
+ 
+ 
+ 
+ 
+ 
