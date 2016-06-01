@@ -1,0 +1,14 @@
+[1] : 20
+[2] : 15
+[3] : 9
+[4] : Null
+[5] : 18
+
+Comment:
+[1] : zalozenia spelnione w 100%, program dziala poprawnie, ma przejrzysty interfejs graficzny
+[2] : ostatni raport 10.04.2016, 2 tygodnie pozniej konsultacje u mnie w biurze; troche zabraklo feedbacku z waszej strony, gdybyscie pracowali nad jakims rozwiazaniem komercyjnym, moglibyscie miec problem z oddaniem projektu; plusem za to jest wczesniejsze oddanie pracy
+[3] : bardzo ladny projekt, przejrzyscie zaprezentowane wyniki; mozna nastepnym razem sprobowac skorzystac z bardziej zaawansowanych algorytmow analizy matematycznej
+[4] : czekamy na ocene kolegow
+[5] : zaprezentowano poprawnie dzialajacy program, przygotowano dokumentacje (literowki!), w miare profesjonalnie wyjasniono mechanizm dzialania calosci systemu
+
+
