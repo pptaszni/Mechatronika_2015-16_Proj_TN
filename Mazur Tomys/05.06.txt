@@ -1,0 +1,5 @@
+﻿1. 	W "tryby-pracy.pdf" opisaliśmy poszczególne pozycje przyjmowane przez spojler.
+2. 	"kod/algorytmdzialania_serwo z enkoderem" - kod przystosowany do pracy
+	z enkoderem i serwem. Serwo na wejście przyjmuje zadaną prędkość.
+3. 	"kod/algorytmdzialania_algorytmdzialnia_serwo" - kod przystosowany do pracy
+	z serwem z wbudowanym enkoderem. Serwo na wejście przyjmuje zadany kąt.
