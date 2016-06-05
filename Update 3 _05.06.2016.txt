@@ -1,0 +1,7 @@
+Projekt jest na ukoñczeniu.
+1. Zosta³y narzucone filtry, ¿eby nie wykrywa³ ró¿nych bzdur, dziêki czemu ograniczyliœmy 90% b³êdnych detekcji
+2. Uda³o siê uzyskaæ wspó³rzêdne wykrywanych punktów. Na ich podstawie za pomoc¹ prostych warunków wyrzucamy do konsoli
+ró¿ne teksty w zale¿noœci od po³o¿enia tekstu. O
+3. Obecnie ekran zosta³ podzielony na 3 czêœci i w zale¿noœci od tego gdzie znajduje siê œwiat³o, "gaszone" jest prawe, lewe lub obydwa œwiat³a drogowe
+4. Jutro zamierzamy kupiæ diody i rezystorki oraz dok³adniej zdefiniowaæ obszary detekcji œwiat³a (podczas nagrywania filmiku w czasie jazdy autem)
+5. Problem z którym siê borykamy od kilku dni to biblioteka RPi.GPIO, która mimo ¿e jest zainstalowana na Raspbianie, nie jest wykrywana w terminalu
