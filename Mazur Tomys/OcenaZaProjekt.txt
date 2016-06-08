@@ -1,0 +1,13 @@
+[1] : 19
+[2] : 20
+[3] : 9
+[4] : Null
+[5] : 18
+
+Comment:
+[1] : zalozenia spelnione w 100%, prototyp systemu dzialal dobrze podczas prezentacji, jedyny minus to troche slaba jakosc uzytych przewodow; jesli chcielibyscie kiedys ten projekt ciegnac dalej, to polecam wydrukowac PCB
+[2] : systematyczna praca przez caly semestr, czeste raporty i bardzo dobry kontakt z klientem
+[3] : praca samodzielna, integracja elektroniki, oprogramowania i mechaniki + model spojlera
+[4] : czekamy na ocene kolegow
+[5] : zaprezentowano poprawnie dzialajace urzadzenie, z powodu braku warunkow do testow na rzeczywistym obiekcie przygotowano rozne wersje oprogramowania i proste srodowisko symulacyjne, mozna bylo jeszcze ewentualnie zaprojektowac PCB w celu zapewnienia wiekszej niezawodnosci
+
