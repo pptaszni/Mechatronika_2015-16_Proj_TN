@@ -1,0 +1,32 @@
+Projekt jest gotowy.
+Œwiat³a samochodu zasymulowaliœmy za pomoc¹ LEDowej latarki telefonu. 
+Niebieskie œwiat³a odzwierciedlaj¹ œwiat³a mijania samochodu i s¹ one w³¹czone ca³y czas (tak jak byæ powinny zgodnie z polskim kodeksem drogowym).
+Czerwone swiat³a odpowiadaj¹ œwiat³om drogowym.
+Œwiat³a drogowe s¹ tak¿e domyœlnie w³¹czone podczas uruchomienia systemu.
+W momencie, kiedy na ekranie w odpowiednich obszarach pojawi siê œwiat³o (których wymiary dobraliœmy na podstawie ró¿nych zdjêæ)
+wówczas zgaœnie lewe, prawe lub obydwa œwiat³a drogowe. 
+Ma to na celu oczywiœcie unikniêcie sytuacji, w której oœlepiamy kierowcê pojazdu nadje¿dzaj¹cego z naprzeciwka.
+Diody zosta³y szeregowo po³¹czone z rezystorami 150Ohm i zasilane napiêciem 3,3V. 
+Do diod czerwonych nale¿a³o wprowadziæ opóŸnienie.
+Bez opóŸnienia diody mruga³y, poniewa¿ bloby s¹ wykrywane z odgórnie ustalonym okresem a na ich podstawie gasimy œwiat³o.
+Po dodaniu opóŸnienia programowego, zacina³a siê tak¿e detekcja blobów, co psu³o ca³y efekt. 
+Zdecydowaliœmy siê wiêc na dodanie kondensatorów, w celu wprowadzenia opóŸnienia sprzêtowego.
+Dziêki temu detekcja blobów bêdzie trwa³a ca³y czas, natomaist diody (œwiat³a) nie bêd¹ a¿ tak mruga³y.
+Posiadaliœmy tylko jeden kondensator 22uF i trzy inne (troche mniejsze), jednak wystarczy³o to aby zlikwidowac migotanie sygna³u œwietlnego.
+
+
+
+Do raportu do³¹czone s¹:
+
+A) link do filmu prezentuj¹cego dzia³anie urz¹dzenia na Youtube
+https://youtu.be/g_1xek8hcVE
+
+B) Uporz¹dkowany kod programu
+Kod zosta³ uporz¹dkowany oraz opisany komentarzami, co powinno znacz¹co u³atwiæ jego edycjê w przysz³oœci.
+
+C)Zdjêcie zmontowanego uk³adu
+
+D)Zdjêcie obszarów detekcji z poziomu potencjalnego umieszczenia urz¹dzenia w samochodzie
+W momencie gdy œwiat³o jest w obszarze 1 - wy³¹czane jest lewe œwiat³o drogowe. 
+Gdy œwiat³o jest w obszarze 2 - wy³¹czane s¹ obydwa œwiat³a drogowe.
+Znalezienie siê œwiat³a w obszarze 3 powoduje natomiast wy³¹czenie prawego œwiat³a drogowego.
