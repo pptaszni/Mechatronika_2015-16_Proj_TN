@@ -89,3 +89,10 @@ Raport znajduje się w pliku raport_15maja.pdf. Oprócz tego dodane zostały kod
 29.05.16 Dalsze postępy nad programem
 
 Raport znajduje się w pliku raport_29maja.pdf. Oprócz tego dodany został kod programu: CaloscTesty.py.
+
+===================================================
+
+
+10.06.16 Zakończenie projektu
+
+Raport końcowy znajduje się w pliku Raport_koncowy.pdf. Oprócz tego dodany został kod programu: CaloscTesty.py oraz Calosc.py.
