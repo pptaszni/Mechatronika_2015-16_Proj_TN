@@ -1,0 +1,13 @@
+[1] : 19
+[2] : 18
+[3] : 9
+[4] : Null
+[5] : 15
+
+Comment:
+[1] : zalozenia spelnione w 100%, udalo sie zaimplementowac sterowanie swiatlami drogowymi, nie udalo sie zamontowac ukladu w samochodzie, niewielkim minusem jest brak projektu zasilania
+[2] : systematyczna praca przez caly semestr, postepy raportowane w miare czesto, prawie co tydzien
+[3] : praca samodzielna, integracja elektroniki, oprogramowania
+[4] : czekamy na ocene kolegow
+[5] : Na filmiku w sposob w miare czytelny zaprezentowano dzialajace urzadzenie wraz ze srodowiskiem testowym. Pisemny raport jest slaby pod katem stylistyki, ciezko wyciagnac z niego istotne informacje.
+
