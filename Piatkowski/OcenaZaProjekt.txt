@@ -1,0 +1,13 @@
+[1] : 18
+[2] : 15
+[3] : 9
+[4] : Null
+[5] : 15
+
+Comment:
+[1] : Zalozenia [1] i [2] zostaly calkowicie spelnione, co do [3] (proba implementacji w aucie) nie ma zadnej informacji w przedstawionym raporcie
+[2] : Raporty dosyc rzadkie, konkretne efekty pracy widoczne dopiero w drugiej polowie maja
+[3] : Samodzielny projekt, integracja elektroniki i oprogramownaia
+[4] : Czekamy na ocene kolegow
+[5] : W raporcie wyjasniono zasade dzialania systemu wykrywajacego pojazdy. Na filmiku przedstawiono dzialajacy system. Brak odniesienia do zalozen projektowych, prezentacja dosyc surowa, moze byc niezrozumiala dla osoby nieznajacej kontekstu.
+
