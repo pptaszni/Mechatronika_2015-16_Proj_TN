@@ -1,0 +1,8 @@
+Dopiero wczoraj siê zebralismy ¿eby nakrêciæ nowy filmik. 
+Znajduje siê on pod linkiem
+https://www.youtube.com/watch?v=eKb2WaSGNRo
+Przepraszamy za takie opóŸnienie, ale nie byliœmy w stanie wczeœniej siê spotkaæ.
+
+Co do implementacji w samochodzie, to prawda zapomnieliœmy o tym wspomnieæ w raporcie koñcowym.
+Implementacja nie by³aby trudna, wystarczy³oby tak naprawde podmienic diody za tranzystory i wpiaæ to w odpowiednie miejsca w samochodzie.
+Nie uda³o siê tego zrealizowaæ, z powodu zbyt ma³ej ilosci czasu.
