@@ -1,0 +1,13 @@
+[1] : 20
+[2] : 13
+[3] : 10
+[4] : Null
+[5] : 19
+
+Comment:
+[1] : zalozenia spelnione w 100%, system dziala bardzo dobrze
+[2] : skladane raporty byly obszerne, ale niestety bardzo rzadkie (2 razy: kwiecien, maj), oprocz tego musze dac kare za opoznienie, chociaz projekt byl na ukonczeniu juz pod koniec maja
+[3] : praca samodzielna, integracja elektroniki, oprogramowania i implementacja w rzeczywistym pojezdzie
+[4] : czekamy na ocene kolegow
+[5] : Pisemny raport zawiera wszystkie potrzebne informacje odnosnie spelnionych zalozen projektowych i szczegolow implementacyjnych; Jedyny minus to niekompletny schemat elektryczny; Na filmie w bardzo wyrazny sposob przedstawiono zasade dzialania systemu;
+
