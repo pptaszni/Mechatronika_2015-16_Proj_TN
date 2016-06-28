@@ -1,0 +1,13 @@
+[1] : 10
+[2] : 8
+[3] : 8
+[4] : Null
+[5] : 10
+
+Comment:
+[1] : zalozenia projektowe nie zostaly spelnione, udalo sie napisac program czytajacy pliki graficzne
+[2] : po konsultacjach w kwietniu i dodaniu zalozen projektowych brak raportow; do tego projekt oddany z bardzo duzym opoznieniem
+[3] : projekt w zalozeniach byl dosyc skomplikowany, jednak nie udalo sie dotrzec do fazy testowania algorytmow
+[4] : czekamy na ocene kolegow
+[5] : projekt przedstawiono osobiscie; niestety nie pokazano dzialajacego systemu, ani efektow dzialania algorytmu progowania; zbyt malo zalozen zostalo spelnionych, aby moc pozytywnie ocenic sama prezentacje
+
